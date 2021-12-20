@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 
-.App {
-  max-width: 500px;
-  margin: auto;
-}
-
 img {
   max-width: 400px;
   height: 100%;
@@ -90,13 +85,9 @@ img {
   --red: #ff5555;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
+  display: flex;
+  justify-content: center;
   background-image: radial-gradient(
     var(--secondary) 30%,
     var(--background) 30%

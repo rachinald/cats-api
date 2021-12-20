@@ -12,7 +12,7 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       {/* if the element before && is true, it will execute the following code */}
       {data.url && <img alt="cat" src={data.url} />}
       <button class="card" onClick={handleFetch}>
