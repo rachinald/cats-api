@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
 
-function App() {
+const App = () => {
+  const [data, setData] = useState("");
+
+  const handleFetch = async () => {
+    const response = await fetch("https://api.thecatapi.com/v1/images/search");
+    const data = await response.json();
+
+    setData(data[0]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* if the element before && is true, it will execute the following code */}
+      {data.url && <img alt="cat" src={data.url} />}
+      <button class="card" onClick={handleFetch}>
+        Click me
+      </button>
     </div>
   );
-}
+};
 
 export default App;
