@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
   const [data, setData] = useState("");
@@ -11,11 +11,20 @@ const App = () => {
     setData(data[0]);
   };
 
+  const [count, setCount] = useState(1);
+
+  useEffect(() => {
+    handleFetch();
+  }, [count]);
+
   return (
     <div className="app">
-      {/* if the element before && is true, it will execute the following code */}
-      {data.url && <img alt="cat" src={data.url} />}
-      <button class="card" onClick={handleFetch}>
+      <img alt="cat" src={data.url} />
+      <p>You have met {count} kitties!</p>
+      <button
+        class="card"
+        onClick={() => setCount(count + 1) && { handleFetch }}
+      >
         Click me
       </button>
     </div>
