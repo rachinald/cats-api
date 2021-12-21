@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cats-api/static/css/main.e09c862a.css",
-    "main.js": "/cats-api/static/js/main.e0353359.js",
+    "main.css": "/cats-api/static/css/main.baacef16.css",
+    "main.js": "/cats-api/static/js/main.32cdd4fa.js",
     "index.html": "/cats-api/index.html",
-    "main.e09c862a.css.map": "/cats-api/static/css/main.e09c862a.css.map",
-    "main.e0353359.js.map": "/cats-api/static/js/main.e0353359.js.map"
+    "main.baacef16.css.map": "/cats-api/static/css/main.baacef16.css.map",
+    "main.32cdd4fa.js.map": "/cats-api/static/js/main.32cdd4fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.e09c862a.css",
-    "static/js/main.e0353359.js"
+    "static/css/main.baacef16.css",
+    "static/js/main.32cdd4fa.js"
   ]
 }
